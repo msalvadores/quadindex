@@ -1,3 +1,17 @@
 Still very experimental implementation.
 
 Any questions contact msalvadores@gmail.com
+
+Dependencies
+------------
+
+* Raptor 2
+  http://librdf.org/raptor/
+* Tokyo Cabinet
+  http://fallabs.com/tokyocabinet/tokyocabinet-1.4.47.tar.gz	
+* json-glib
+  https://github.com/ebassi/json-glib.git
+
+Acknowledgements
+---------------
+ 4store (http://4store.org) for its hash.c implementation.
