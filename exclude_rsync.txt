@@ -1,0 +1,11 @@
+*.o
+*.a
+.*.swp
+*.dSYM
+storage/rdf-dump
+storage/rdf-import
+storage/rdf-query
+data/*
+tmp/*
+*.py
+explore

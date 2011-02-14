@@ -1,0 +1,621 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AES_BLOCK_LEN	common/umac.c	/^#define AES_BLOCK_LEN /;"	d	file:
+AES_ROUNDS	common/umac.c	/^#define AES_ROUNDS	/;"	d	file:
+ALLOC_BOUNDARY	common/umac.c	/^#define ALLOC_BOUNDARY /;"	d	file:
+ANON_MAPPED	storage/backup.crs-matrix.h	/^#define ANON_MAPPED /;"	d
+ANON_MAPPED	storage/crs-matrix.h	/^#define ANON_MAPPED /;"	d
+B	profile.c	/^#define B /;"	d	file:
+BINS	storage/Makefile	/^BINS = rdf-import rdf-dump rdf-query$/;"	m
+BIT_NAME	common/params.h	/^#define BIT_NAME /;"	d
+CFLAGS	common/Makefile	/^CFLAGS = -Wall -g -std=gnu99 -I..\/ `pkg-config --cflags $(pkgs)`$/;"	m
+CFLAGS	storage/Makefile	/^CFLAGS = -Wall -g -std=gnu99 -O2 -I.\/ -I..\/  `pkg-config --cflags $(pkgs)` -ltcmalloc$/;"	m
+COLIND_LEN	storage/crs-matrix.c	/^#define COLIND_LEN /;"	d	file:
+COLIND_OFFSET	storage/crs-matrix.c	/^#define COLIND_OFFSET /;"	d	file:
+CRS_BIN_PAGES	storage/backup.crs-matrix.h	/^#define CRS_BIN_PAGES /;"	d
+CRS_BIN_PAGES	storage/crs-matrix.h	/^#define CRS_BIN_PAGES /;"	d
+CRS_HEADER	storage/crs-matrix.c	/^#define CRS_HEADER /;"	d	file:
+CRS_INDEX_PAGES	storage/backup.crs-matrix.h	/^#define CRS_INDEX_PAGES /;"	d
+CRS_INDEX_PAGES	storage/crs-matrix.h	/^#define CRS_INDEX_PAGES /;"	d
+CRS_NAME	common/params.h	/^#define CRS_NAME /;"	d
+CSR_DIR	common/params.h	/^#define CSR_DIR /;"	d
+DATA_NAME	storage/rdfindex.c	/^#define DATA_NAME /;"	d	file:
+DIRECT_NAMESPACE	common/rdf-constants.h	/^#define DIRECT_NAMESPACE /;"	d
+DIRECT_SUBCLASS	common/rdf-constants.h	/^#define DIRECT_SUBCLASS /;"	d
+DIRECT_SUBPROPERTY	common/rdf-constants.h	/^#define DIRECT_SUBPROPERTY /;"	d
+DIRECT_TYPE	common/rdf-constants.h	/^#define DIRECT_TYPE /;"	d
+DO_INDEX	storage/rdfindex.c	/^#define DO_INDEX /;"	d	file:
+FILE_MAPPED	storage/backup.crs-matrix.h	/^#define FILE_MAPPED /;"	d
+FILE_MAPPED	storage/crs-matrix.h	/^#define FILE_MAPPED /;"	d
+FORCE_C_ONLY	common/umac.c	/^#  define FORCE_C_ONLY /;"	d	file:
+FS_BNODE_NUM	common/hash.h	/^#define FS_BNODE_NUM(/;"	d
+FS_DEFAULT_GRAPH	common/rdf-constants.h	/^#define FS_DEFAULT_GRAPH /;"	d
+FS_DEFAULT_GRAPH_RID	common/hash.h	/^#define FS_DEFAULT_GRAPH_RID /;"	d
+FS_IS_BNODE	common/hash.h	/^#define FS_IS_BNODE(/;"	d
+FS_IS_LITERAL	common/hash.h	/^#define FS_IS_LITERAL(/;"	d
+FS_IS_URI	common/hash.h	/^#define FS_IS_URI(/;"	d
+FS_IS_URI_BN	common/hash.h	/^#define FS_IS_URI_BN(/;"	d
+FS_NUM_BNODE	common/hash.h	/^#define FS_NUM_BNODE(/;"	d
+FS_RID_GONE	common/hash.h	/^#define FS_RID_GONE /;"	d
+FS_RID_NULL	common/hash.h	/^#define FS_RID_NULL /;"	d
+FS_RID_SEGMENT	common/hash.h	/^#define FS_RID_SEGMENT(/;"	d
+FS_SYSTEM_CONFIG	common/rdf-constants.h	/^#define FS_SYSTEM_CONFIG /;"	d
+FS_TEXT	common/rdf-constants.h	/^#define FS_TEXT /;"	d
+FS_TEXT_DMETAPHONE	common/rdf-constants.h	/^#define FS_TEXT_DMETAPHONE /;"	d
+FS_TEXT_INDEX	common/rdf-constants.h	/^#define FS_TEXT_INDEX /;"	d
+FS_TEXT_STEM	common/rdf-constants.h	/^#define FS_TEXT_STEM /;"	d
+FS_TEXT_TOKEN	common/rdf-constants.h	/^#define FS_TEXT_TOKEN /;"	d
+GCC_X86	common/umac.c	/^#define GCC_X86 /;"	d	file:
+GETU32	common/rijndael-alg-fst.c	/^#define GETU32(/;"	d	file:
+GLADMAN_AES	common/umac.c	/^#  define GLADMAN_AES /;"	d	file:
+GRAPH	storage/backup.crs-matrix.h	/^    GRAPH,$/;"	e	enum:_crs_matrix_index_type
+GRAPH	storage/crs-matrix.h	/^    GRAPH,$/;"	e	enum:_crs_matrix_index_type
+HASHES_DIR	common/params.h	/^#define HASHES_DIR /;"	d
+HASHES_NAME	common/params.h	/^#define HASHES_NAME /;"	d
+HASHES_NAME	storage/rdfindex.c	/^#define HASHES_NAME /;"	d	file:
+HASHES_NUM	common/params.h	/^#define HASHES_NUM /;"	d
+HASH_BUF_BYTES	common/umac.c	/^#define HASH_BUF_BYTES /;"	d	file:
+HASH_H	common/hash.h	/^#define HASH_H$/;"	d
+HEADERS	common/Makefile	/^HEADERS = hash.h error.h params.h rdf-parser.h$/;"	m
+INT_CLOSURE	common/rdf-constants.h	/^#define INT_CLOSURE /;"	d
+INT_DEPENDS	common/rdf-constants.h	/^#define INT_DEPENDS /;"	d
+INT_NS	common/rdf-constants.h	/^#define INT_NS /;"	d
+L1_KEY_LEN	common/umac.c	/^#define L1_KEY_LEN /;"	d	file:
+L1_KEY_SHIFT	common/umac.c	/^#define L1_KEY_SHIFT /;"	d	file:
+L1_PAD_BOUNDARY	common/umac.c	/^#define L1_PAD_BOUNDARY /;"	d	file:
+LDFLAGS	common/Makefile	/^LDFLAGS = $(ldfdarwin) $(ldflinux) `pkg-config --libs  $(pkgs)`$/;"	m
+LDFLAGS	storage/Makefile	/^LDFLAGS = $(ldfdarwin) $(ldflinux) `pkg-config --libs  $(pkgs)` $/;"	m
+LIB_OBJS	common/Makefile	/^LIB_OBJS = umac.o rijndael-alg-fst.o hash.o error.o rdf-parser.o$/;"	m
+LIB_OBJS	storage/Makefile	/^LIB_OBJS = crs-matrix.o crs-matrix-io.o rdf-kb.o$/;"	m
+LOAD_UINT32_LITTLE	common/umac.c	/^#define LOAD_UINT32_LITTLE(/;"	d	file:
+LOAD_UINT32_REVERSED	common/umac.c	/^static UINT32 LOAD_UINT32_REVERSED(void *p)$/;"	f	file:
+LOAD_UINT32_REVERSED	common/umac.c	/^static UINT32 LOAD_UINT32_REVERSED(void *ptr)$/;"	f	file:
+LOW_BIT_MASK	common/umac.c	/^#define LOW_BIT_MASK /;"	d	file:
+MAP_ANON	storage/backup.crs-matrix.c	/^#define MAP_ANON /;"	d	file:
+MAP_ANON	storage/crs-matrix.c	/^#define MAP_ANON /;"	d	file:
+MAXKB	common/rijndael-alg-fst.h	/^#define MAXKB	/;"	d
+MAXKC	common/rijndael-alg-fst.h	/^#define MAXKC	/;"	d
+MAXNR	common/rijndael-alg-fst.h	/^#define MAXNR	/;"	d
+MSC_X86	common/umac.c	/^#define MSC_X86 /;"	d	file:
+MUL64	common/umac.c	/^#define MUL64(/;"	d	file:
+N	profile.c	/^#define N /;"	d	file:
+NH_STEP	common/umac.c	/^#define NH_STEP(/;"	d	file:
+NH_STEP_1	common/umac.c	/^#define NH_STEP_1(/;"	d	file:
+NH_STEP_2	common/umac.c	/^#define NH_STEP_2(/;"	d	file:
+NOT_MAPPED	storage/backup.crs-matrix.h	/^#define NOT_MAPPED /;"	d
+NOT_MAPPED	storage/crs-matrix.h	/^#define NOT_MAPPED /;"	d
+OBJECT	storage/backup.crs-matrix.h	/^    OBJECT$/;"	e	enum:_crs_matrix_index_type
+OBJECT	storage/crs-matrix.h	/^    OBJECT$/;"	e	enum:_crs_matrix_index_type
+OWL_CLASS	common/rdf-constants.h	/^#define OWL_CLASS /;"	d
+OWL_DATPROPERTY	common/rdf-constants.h	/^#define OWL_DATPROPERTY /;"	d
+OWL_NAMESPACE	common/rdf-constants.h	/^#define OWL_NAMESPACE /;"	d
+OWL_OBJPROPERTY	common/rdf-constants.h	/^#define OWL_OBJPROPERTY /;"	d
+PREDICATE	storage/backup.crs-matrix.h	/^    PREDICATE,$/;"	e	enum:_crs_matrix_index_type
+PREDICATE	storage/crs-matrix.h	/^    PREDICATE,$/;"	e	enum:_crs_matrix_index_type
+PUTU32	common/rijndael-alg-fst.c	/^#define PUTU32(/;"	d	file:
+QUAD_SIZE	common/params.h	/^#define QUAD_SIZE /;"	d
+QUAD_SIZE	storage/rdfindex.c	/^#define QUAD_SIZE /;"	d	file:
+RDFS_CLASS	common/rdf-constants.h	/^#define RDFS_CLASS /;"	d
+RDFS_DOMAIN	common/rdf-constants.h	/^#define RDFS_DOMAIN /;"	d
+RDFS_LABEL	common/rdf-constants.h	/^#define RDFS_LABEL /;"	d
+RDFS_NAMESPACE	common/rdf-constants.h	/^#define RDFS_NAMESPACE /;"	d
+RDFS_RANGE	common/rdf-constants.h	/^#define RDFS_RANGE /;"	d
+RDFS_RESOURCE	common/rdf-constants.h	/^#define RDFS_RESOURCE /;"	d
+RDFS_SUBCLASS	common/rdf-constants.h	/^#define RDFS_SUBCLASS /;"	d
+RDFS_SUBPROPERTY	common/rdf-constants.h	/^#define RDFS_SUBPROPERTY /;"	d
+RDF_CONSTANTS_H	common/rdf-constants.h	/^#define RDF_CONSTANTS_H$/;"	d
+RDF_CRS	storage/backup.crs-matrix.h	/^#define RDF_CRS /;"	d
+RDF_CRS	storage/crs-matrix.h	/^#define RDF_CRS /;"	d
+RDF_CRS_ERROR_CREATE_CRS	storage/backup.crs-matrix.h	/^#define RDF_CRS_ERROR_CREATE_CRS /;"	d
+RDF_CRS_ERROR_CREATE_CRS	storage/crs-matrix.h	/^#define RDF_CRS_ERROR_CREATE_CRS /;"	d
+RDF_CRS_IO	storage/crs-matrix-io.h	/^#define RDF_CRS_IO /;"	d
+RDF_KB	storage/rdf-kb.h	/^#define RDF_KB /;"	d
+RDF_KB_ERROR_CLOSING_HASH	storage/rdf-kb.h	/^#define RDF_KB_ERROR_CLOSING_HASH /;"	d
+RDF_KB_ERROR_CREATING_DIR	storage/rdf-kb.h	/^#define RDF_KB_ERROR_CREATING_DIR /;"	d
+RDF_KB_ERROR_DUMP_NO_MATRIX	storage/rdf-kb.h	/^#define RDF_KB_ERROR_DUMP_NO_MATRIX /;"	d
+RDF_KB_ERROR_OPEN_FILE_FOR_DUMP	storage/rdf-kb.h	/^#define RDF_KB_ERROR_OPEN_FILE_FOR_DUMP /;"	d
+RDF_KB_ERROR_OPEN_HASH	storage/rdf-kb.h	/^#define RDF_KB_ERROR_OPEN_HASH /;"	d
+RDF_KB_INVALID_KB_NAME	storage/rdf-kb.h	/^#define RDF_KB_INVALID_KB_NAME /;"	d
+RDF_NAMESPACE	common/rdf-constants.h	/^#define RDF_NAMESPACE /;"	d
+RDF_PARSER	common/rdf-parser.h	/^#define RDF_PARSER /;"	d
+RDF_PARSER_ERROR_CREATE_PARSER	common/rdf-parser.h	/^#define RDF_PARSER_ERROR_CREATE_PARSER /;"	d
+RDF_PARSER_UNABLE_TO_OPEN_FILE	common/rdf-parser.h	/^#define RDF_PARSER_UNABLE_TO_OPEN_FILE /;"	d
+RDF_PROPERTY	common/rdf-constants.h	/^#define RDF_PROPERTY /;"	d
+RDF_RESOURCE	common/rdf-constants.h	/^#define RDF_RESOURCE /;"	d
+RDF_TYPE	common/rdf-constants.h	/^#define RDF_TYPE /;"	d
+READ_BUF_SIZE	common/params.h	/^#define READ_BUF_SIZE /;"	d
+READ_BUF_SIZE	storage/rdfindex.c	/^#define READ_BUF_SIZE /;"	d	file:
+RID_SIZE	common/params.h	/^#define RID_SIZE /;"	d
+RID_SIZE	storage/rdfindex.c	/^#define RID_SIZE /;"	d	file:
+ROWLIST_LEN	storage/crs-matrix.c	/^#define ROWLIST_LEN /;"	d	file:
+ROWLIST_OFFSET	storage/crs-matrix.c	/^#define ROWLIST_OFFSET /;"	d	file:
+ROWPTR_LEN	storage/crs-matrix.c	/^#define ROWPTR_LEN /;"	d	file:
+ROWPTR_OFFSET	storage/crs-matrix.c	/^#define ROWPTR_OFFSET /;"	d	file:
+SEGMENTS	common/params.h	/^#define SEGMENTS /;"	d
+SEGMENTS	storage/rdfindex.c	/^#define SEGMENTS /;"	d	file:
+SSE2	common/umac.c	/^#define SSE2 /;"	d	file:
+STAT_BATCH	common/rdf-parser.c	/^#define STAT_BATCH /;"	d	file:
+STAT_BATCH	storage/rdfindex.c	/^#define STAT_BATCH /;"	d	file:
+STORE_UINT32_BIG	common/umac.c	/^#define STORE_UINT32_BIG(/;"	d	file:
+STORE_UINT32_REVERSED	common/umac.c	/^static void STORE_UINT32_REVERSED(void *p, UINT32 x)$/;"	f	file:
+STORE_UINT32_REVERSED	common/umac.c	/^static void STORE_UINT32_REVERSED(void *ptr, UINT32 x)$/;"	f	file:
+STREAMS	common/umac.c	/^#define STREAMS /;"	d	file:
+SUBDIRS	Makefile	/^SUBDIRS = common storage$/;"	m
+SUBJECT	storage/backup.crs-matrix.h	/^    SUBJECT,$/;"	e	enum:_crs_matrix_index_type
+SUBJECT	storage/crs-matrix.h	/^    SUBJECT,$/;"	e	enum:_crs_matrix_index_type
+SWAP	common/rijndael-alg-fst.c	/^#define SWAP(/;"	d	file:
+THREAD_POOL_SIZE	common/params.h	/^#define THREAD_POOL_SIZE /;"	d
+THREAD_POOL_SIZE	storage/rdfindex.c	/^#define THREAD_POOL_SIZE /;"	d	file:
+Td0	common/rijndael-alg-fst.c	/^static const u32 Td0[256] = {$/;"	v	file:
+Td1	common/rijndael-alg-fst.c	/^static const u32 Td1[256] = {$/;"	v	file:
+Td2	common/rijndael-alg-fst.c	/^static const u32 Td2[256] = {$/;"	v	file:
+Td3	common/rijndael-alg-fst.c	/^static const u32 Td3[256] = {$/;"	v	file:
+Td4	common/rijndael-alg-fst.c	/^static const u32 Td4[256] = {$/;"	v	file:
+Te0	common/rijndael-alg-fst.c	/^static const u32 Te0[256] = {$/;"	v	file:
+Te1	common/rijndael-alg-fst.c	/^static const u32 Te1[256] = {$/;"	v	file:
+Te2	common/rijndael-alg-fst.c	/^static const u32 Te2[256] = {$/;"	v	file:
+Te3	common/rijndael-alg-fst.c	/^static const u32 Te3[256] = {$/;"	v	file:
+Te4	common/rijndael-alg-fst.c	/^static const u32 Te4[256] = {$/;"	v	file:
+UINT16	common/umac.c	/^typedef unsigned short     UINT16; \/* 2 byte   *\/$/;"	t	file:
+UINT32	common/umac.c	/^typedef unsigned int       UINT32; \/* 4 byte   *\/$/;"	t	file:
+UINT64	common/umac.c	/^typedef unsigned long long UINT64; \/* 8 bytes  *\/$/;"	t	file:
+UINT8	common/umac.c	/^typedef unsigned char      UINT8;  \/* 1 byte   *\/$/;"	t	file:
+UMAC_KEY_LEN	common/umac.c	/^#define UMAC_KEY_LEN /;"	d	file:
+UMAC_OUTPUT_LEN	common/umac.c	/^#  define UMAC_OUTPUT_LEN /;"	d	file:
+UWORD	common/umac.c	/^typedef UINT32 UWORD;$/;"	t	file:
+UWORD	common/umac.c	/^typedef UINT64 UWORD;$/;"	t	file:
+XSD_BOOLEAN	common/rdf-constants.h	/^#define XSD_BOOLEAN	/;"	d
+XSD_DATE	common/rdf-constants.h	/^#define XSD_DATE	/;"	d
+XSD_DATETIME	common/rdf-constants.h	/^#define XSD_DATETIME	/;"	d
+XSD_DECIMAL	common/rdf-constants.h	/^#define XSD_DECIMAL	/;"	d
+XSD_DOUBLE	common/rdf-constants.h	/^#define XSD_DOUBLE	/;"	d
+XSD_FLOAT	common/rdf-constants.h	/^#define XSD_FLOAT	/;"	d
+XSD_INTEGER	common/rdf-constants.h	/^#define XSD_INTEGER	/;"	d
+XSD_NAMESPACE	common/rdf-constants.h	/^#define XSD_NAMESPACE /;"	d
+XSD_STRING	common/rdf-constants.h	/^#define XSD_STRING	/;"	d
+XSD_TIME	common/rdf-constants.h	/^#define XSD_TIME	/;"	d
+_RDF_KB_CRS_H	storage/backup.crs-matrix.h	/^#define _RDF_KB_CRS_H$/;"	d
+_RDF_KB_CRS_H	storage/crs-matrix.h	/^#define _RDF_KB_CRS_H$/;"	d
+_RDF_KB_CRS_IO_H	storage/crs-matrix-io.h	/^#define _RDF_KB_CRS_IO_H$/;"	d
+_RDF_KB_ERROR_H	common/error.h	/^#define _RDF_KB_ERROR_H$/;"	d
+_RDF_KB_H	storage/rdf-kb.h	/^#define _RDF_KB_H$/;"	d
+_RDF_KB_PARSER_H	common/rdf-parser.h	/^#define _RDF_KB_PARSER_H$/;"	d
+__HAVE_UMAC_H__	common/umac.h	/^#define __HAVE_UMAC_H__$/;"	d
+__LITTLE_ENDIAN__	common/umac.c	/^#define __LITTLE_ENDIAN__ /;"	d	file:
+__RIJNDAEL_ALG_FST_H	common/rijndael-alg-fst.h	/^#define __RIJNDAEL_ALG_FST_H$/;"	d
+_crs_construction_input	storage/crs.c	/^struct _crs_construction_input {$/;"	s	file:
+_crs_matrix_index	storage/backup.crs-matrix.h	/^struct _crs_matrix_index { \/\/mapping to g,s,o$/;"	s
+_crs_matrix_index	storage/crs-matrix.h	/^struct _crs_matrix_index { \/\/mapping to g,s,o$/;"	s
+_crs_matrix_index_type	storage/backup.crs-matrix.h	/^enum _crs_matrix_index_type {$/;"	g
+_crs_matrix_index_type	storage/crs-matrix.h	/^enum _crs_matrix_index_type {$/;"	g
+_crs_segment	storage/crs.c	/^struct _crs_segment {$/;"	s	file:
+_fold_stmt	storage/crs.c	/^struct _fold_stmt {$/;"	s	file:
+_import_data	storage/crs.c	/^struct _import_data {$/;"	s	file:
+_import_data	storage/rdfindex.c	/^struct _import_data {$/;"	s	file:
+_index_stmt	storage/crs.c	/^struct _index_stmt {$/;"	s	file:
+_index_stmt	storage/rdfindex.c	/^struct _index_stmt {$/;"	s	file:
+_rdf_kb	storage/rdf-kb.h	/^struct _rdf_kb {$/;"	s
+_rdf_parser_internal	common/rdf-parser.c	/^struct _rdf_parser_internal {$/;"	s	file:
+_rid_2d	storage/crs.c	/^struct _rid_2d {$/;"	s	file:
+aes_encryption	common/umac.c	/^#define aes_encryption(/;"	d	file:
+aes_int_key	common/umac.c	/^typedef UINT8          aes_int_key[AES_ROUNDS+1][4][4]; \/* AES internal *\/$/;"	t	file:
+aes_int_key	common/umac.c	/^typedef aes_encrypt_ctx    aes_int_key[1]; \/* AES internal *\/$/;"	t	file:
+aes_key_setup	common/umac.c	/^#define aes_key_setup(/;"	d	file:
+append	storage/backup.crs-matrix.h	/^    unsigned char* append;$/;"	m	struct:__anon3
+append_2d	storage/crs.c	/^void append_2d(fold_stmt *f,pointer_stmt s) {$/;"	f
+bin	storage/backup.crs-matrix.h	/^    crs_mmap_mem *bin; \/* guint[3] + rowlist, rowptr, colind *\/ $/;"	m	struct:__anon4
+bin	storage/crs-matrix.h	/^    crs_mmap_mem *bin; \/* guint[3] + rowlist, rowptr, colind *\/ $/;"	m	struct:__anon7
+bin_mem	storage/backup.crs-matrix.h	/^    crs_mmap_mem *bin_mem;$/;"	m	struct:__anon5
+bin_mem	storage/crs-matrix.h	/^    crs_mmap_mem *bin_mem;$/;"	m	struct:__anon8
+bnode_ts	common/rdf-parser.c	/^    gchar* bnode_ts;$/;"	m	struct:_rdf_parser_internal	file:
+bytes_hashed	common/umac.c	/^    int bytes_hashed;        \/* Bytes (out of L1_KEY_LEN) incorperated.   *\/$/;"	m	struct:__anon2	file:
+cache	common/umac.c	/^    UINT8 cache[AES_BLOCK_LEN];  \/* Previous AES output is saved      *\/$/;"	m	struct:__anon1	file:
+col	storage/backup.crs-matrix.h	/^    crs_matrix_index_type col;$/;"	m	struct:_crs_matrix_index
+col	storage/crs-matrix.h	/^    crs_matrix_index_type col;$/;"	m	struct:_crs_matrix_index
+col_bin	storage/crs-matrix.h	/^    crs_matrix_index_type col_bin;$/;"	m	struct:_crs_matrix_index
+col_bit	storage/backup.crs-matrix.h	/^    crs_matrix_index_type col_bit;$/;"	m	struct:_crs_matrix_index
+colind	storage/backup.crs-matrix.h	/^    fs_rid *colind;$/;"	m	struct:__anon5
+colind	storage/crs.c	/^    GArray *colind;$/;"	m	struct:_crs_segment	file:
+colind_head	storage/crs-matrix.h	/^    fs_rid *colind_head;$/;"	m	struct:__anon8
+colind_len	storage/backup.crs-matrix.h	/^    guint colind_len;$/;"	m	struct:__anon5
+colind_len	storage/crs-matrix.h	/^    guint colind_len;$/;"	m	struct:__anon8
+compare_stmt	storage/crs.c	/^guint compare_stmt(gconstpointer a, gconstpointer b) {$/;"	f
+counter	common/rdf-parser.c	/^    int counter;$/;"	m	struct:_rdf_parser_internal	file:
+counter	storage/crs.c	/^     int counter;$/;"	m	struct:_import_data	file:
+counter	storage/rdfindex.c	/^     int counter;$/;"	m	struct:_import_data	file:
+crs_array_insert_shift_rid	storage/crs-matrix.c	/^void crs_array_insert_shift_rid(fs_rid *arr,guint i,guint len,fs_rid val) {$/;"	f
+crs_bin_file	storage/backup.crs-matrix.h	/^    gchar *crs_bin_file;$/;"	m	struct:__anon4
+crs_bin_file	storage/crs-matrix.h	/^    gchar *crs_bin_file;$/;"	m	struct:__anon7
+crs_bin_insert_vals	storage/crs-matrix.c	/^void crs_bin_insert_vals(crs_mmap_mem *mem,unsigned char **kb_cursor_p,unsigned char *new_start,size_t new_len){$/;"	f
+crs_bit_matrix_build	storage/backup.crs-matrix.c	/^crs_mmap_mem *crs_bit_matrix_build(GPtrArray *temp_values,crs_matrix_index *index_conf) {$/;"	f
+crs_bit_matrix_merge	storage/backup.crs-matrix.c	/^void crs_bit_matrix_merge(void* kb_bit,void* new_bit) {$/;"	f
+crs_bit_matrix_merge	storage/crs-matrix.c	/^void crs_bit_matrix_merge(crs_mmap_mem *kb_bin_mem,unsigned char **cursor_kb_bin_p,unsigned char *new_bin) {$/;"	f
+crs_colind_head	storage/crs-matrix.c	/^fs_rid *crs_colind_head(unsigned char *mem) {$/;"	f
+crs_colind_insert_vals	storage/crs-matrix.c	/^void crs_colind_insert_vals(unsigned char *mem, fs_rid *vals, guint start, guint len) {$/;"	f
+crs_colind_len	storage/crs-matrix.c	/^guint crs_colind_len(unsigned char *mem) {$/;"	f
+crs_colind_tail	storage/crs-matrix.c	/^fs_rid *crs_colind_tail(unsigned char *mem) {$/;"	f
+crs_construction_input	storage/crs.c	/^typedef struct _crs_construction_input crs_construction_input;$/;"	t	typeref:struct:_crs_construction_input	file:
+crs_construction_worker	storage/crs.c	/^void crs_construction_worker(gpointer worker_data, gpointer user_data) {$/;"	f
+crs_index_file	storage/backup.crs-matrix.h	/^    gchar *crs_index_file;$/;"	m	struct:__anon4
+crs_index_file	storage/crs-matrix.h	/^    gchar *crs_index_file;$/;"	m	struct:__anon7
+crs_io_bit_elt_offset	storage/backup-crs-matrix-io.c	/^size_t crs_io_bit_elt_offset(crs_bit_matrix *b) {$/;"	f
+crs_io_create_empty_storage	storage/backup-crs-matrix-io.c	/^void crs_io_create_empty_storage(gchar *file_crs_path, GError **error) {$/;"	f
+crs_io_load_matrix	storage/backup-crs-matrix-io.c	/^crs_matrix *crs_io_load_matrix(gchar *file_crs_path,crs_matrix_index *index, GError **error) {$/;"	f
+crs_io_load_matrix	storage/crs-matrix-io.c	/^crs_matrix *crs_io_load_matrix(gchar *crs_path,crs_matrix_index *index, GError **error) {$/;"	f
+crs_io_matrix_persist	storage/backup-crs-matrix-io.c	/^void crs_io_matrix_persist(crs_matrix *matrix,GError **error) {$/;"	f
+crs_io_mmap_matrix	storage/crs-matrix-io.c	/^size_t crs_io_mmap_matrix(crs_matrix *matrix) {$/;"	f
+crs_load_matrix	storage/backup.crs-matrix.c	/^crs_matrix *crs_load_matrix(gchar *file_crs,crs_matrix_index *index,GError **error) {$/;"	f
+crs_load_matrix	storage/crs-matrix.c	/^crs_matrix *crs_load_matrix(gchar *file_crs,crs_matrix_index *index,GError **error) {$/;"	f
+crs_matrix	storage/backup.crs-matrix.h	/^} crs_matrix;$/;"	t	typeref:struct:__anon4
+crs_matrix	storage/crs-matrix.h	/^} crs_matrix;$/;"	t	typeref:struct:__anon7
+crs_matrix_append_bin	storage/backup.crs-matrix.c	/^void crs_matrix_append_bin(crs_matrix *matrix,crs_mmap_mem *bin) {$/;"	f
+crs_matrix_append_colind	storage/backup.crs-matrix.c	/^void crs_matrix_append_colind(crs_mmap_mem *mem,fs_rid val) {$/;"	f
+crs_matrix_append_colind	storage/crs-matrix.c	/^void crs_matrix_append_colind(unsigned char *mem,fs_rid val) {$/;"	f
+crs_matrix_append_rowlist	storage/backup.crs-matrix.c	/^void crs_matrix_append_rowlist(crs_mmap_mem *mem,fs_rid val) {$/;"	f
+crs_matrix_append_rowlist	storage/crs-matrix.c	/^void crs_matrix_append_rowlist(unsigned char *mem,fs_rid val) {$/;"	f
+crs_matrix_append_rowptr	storage/backup.crs-matrix.c	/^void crs_matrix_append_rowptr(crs_mmap_mem *mem,guint val) {$/;"	f
+crs_matrix_append_rowptr	storage/crs-matrix.c	/^void crs_matrix_append_rowptr(unsigned char *mem,guint val) {$/;"	f
+crs_matrix_build	storage/backup.crs-matrix.c	/^void crs_matrix_build(crs_matrix *crs_m,GError *error) {$/;"	f
+crs_matrix_build	storage/crs-matrix.c	/^void crs_matrix_build(crs_matrix *crs_m,GError *error) {$/;"	f
+crs_matrix_free	storage/backup.crs-matrix.c	/^void crs_matrix_free(crs_matrix *crs_m) {$/;"	f
+crs_matrix_free	storage/crs-matrix.c	/^void crs_matrix_free(crs_matrix *crs_m) {$/;"	f
+crs_matrix_index	storage/backup.crs-matrix.h	/^typedef struct _crs_matrix_index crs_matrix_index;$/;"	t	typeref:struct:_crs_matrix_index
+crs_matrix_index	storage/crs-matrix.h	/^typedef struct _crs_matrix_index crs_matrix_index;$/;"	t	typeref:struct:_crs_matrix_index
+crs_matrix_index_type	storage/backup.crs-matrix.h	/^typedef enum _crs_matrix_index_type crs_matrix_index_type;$/;"	t	typeref:enum:_crs_matrix_index_type
+crs_matrix_index_type	storage/crs-matrix.h	/^typedef enum _crs_matrix_index_type crs_matrix_index_type;$/;"	t	typeref:enum:_crs_matrix_index_type
+crs_matrix_init	storage/crs-matrix.c	/^void crs_matrix_init(unsigned char *mem,guint rowlist_len,guint nquads_len) {$/;"	f
+crs_matrix_merge	storage/backup.crs-matrix.c	/^crs_matrix *crs_matrix_merge(crs_matrix *kb_matrix, crs_matrix *new_matrix) {$/;"	f
+crs_matrix_merge	storage/crs-matrix.c	/^crs_matrix *crs_matrix_merge(crs_matrix *kb_matrix, crs_matrix *new_matrix) {$/;"	f
+crs_matrix_mmap_anon	storage/backup.crs-matrix.c	/^static void crs_matrix_mmap_anon(crs_matrix *matrix) {$/;"	f	file:
+crs_matrix_mmap_anon	storage/crs-matrix.c	/^static void crs_matrix_mmap_anon(crs_matrix *matrix, size_t size_index, size_t size_bin) {$/;"	f	file:
+crs_matrix_new	storage/backup.crs-matrix.c	/^crs_matrix *crs_matrix_new(GPtrArray *temp_values, crs_matrix_index *index_conf) {$/;"	f
+crs_matrix_new	storage/crs-matrix.c	/^crs_matrix *crs_matrix_new(GPtrArray *temp_values, crs_matrix_index *index_conf) {$/;"	f
+crs_matrix_sync	storage/backup.crs-matrix.c	/^void crs_matrix_sync(crs_matrix *matrix,GError **error) {$/;"	f
+crs_matrix_sync	storage/crs-matrix.c	/^void crs_matrix_sync(crs_matrix *matrix,GError **error) {$/;"	f
+crs_mem_size	storage/backup.crs-matrix.c	/^size_t crs_mem_size(guint rowptr_len,guint rowlist_len,guint colind_len) {$/;"	f
+crs_memory	storage/crs-matrix.c	/^static size_t crs_memory(guint rowlist_len,guint n_quads) {$/;"	f	file:
+crs_memory_sizes	storage/crs-matrix.c	/^static size_t *crs_memory_sizes(GPtrArray* quads,crs_matrix_index* index_conf,$/;"	f	file:
+crs_merge_size	storage/crs-matrix.c	/^guint* crs_merge_size(unsigned char *mem_a,unsigned char *mem_b) {$/;"	f
+crs_merge_sort_arrays	storage/backup.crs-matrix.c	/^guint crs_merge_sort_arrays(GArray *arr,guint start,guint end, fs_rid *src, guint src_len) {$/;"	f
+crs_merge_sort_arrays	storage/crs-matrix.c	/^guint crs_merge_sort_arrays(fs_rid *arr,guint start,guint end, fs_rid *src, guint src_len) {$/;"	f
+crs_mmap_bin_iterator	storage/backup.crs-matrix.h	/^} crs_mmap_bin_iterator;$/;"	t	typeref:struct:__anon5
+crs_mmap_bin_iterator	storage/crs-matrix.h	/^} crs_mmap_bin_iterator;$/;"	t	typeref:struct:__anon8
+crs_mmap_bin_iterator_free	storage/backup.crs-matrix.c	/^void crs_mmap_bin_iterator_free(crs_mmap_bin_iterator *i) {$/;"	f
+crs_mmap_bin_iterator_free	storage/crs-matrix.c	/^void crs_mmap_bin_iterator_free(crs_mmap_bin_iterator *i) {$/;"	f
+crs_mmap_bin_iterator_has_next	storage/backup.crs-matrix.c	/^int crs_mmap_bin_iterator_has_next(crs_mmap_bin_iterator *it) {$/;"	f
+crs_mmap_bin_iterator_has_next	storage/crs-matrix.c	/^int crs_mmap_bin_iterator_has_next(crs_mmap_bin_iterator *it) {$/;"	f
+crs_mmap_bin_iterator_init	storage/backup.crs-matrix.c	/^void crs_mmap_bin_iterator_init(crs_mmap_bin_iterator *iterator, crs_mmap_mem *bin_mem) {$/;"	f
+crs_mmap_bin_iterator_init	storage/crs-matrix.c	/^void crs_mmap_bin_iterator_init(crs_mmap_bin_iterator *iterator, crs_mmap_mem *bin_mem) {$/;"	f
+crs_mmap_bin_iterator_new	storage/backup.crs-matrix.c	/^crs_mmap_bin_iterator *crs_mmap_bin_iterator_new() {$/;"	f
+crs_mmap_bin_iterator_new	storage/crs-matrix.c	/^crs_mmap_bin_iterator *crs_mmap_bin_iterator_new() {$/;"	f
+crs_mmap_bin_iterator_next	storage/backup.crs-matrix.c	/^void crs_mmap_bin_iterator_next(crs_mmap_bin_iterator *it) {$/;"	f
+crs_mmap_bin_iterator_next	storage/crs-matrix.c	/^void crs_mmap_bin_iterator_next(crs_mmap_bin_iterator *it) {$/;"	f
+crs_mmap_mem	storage/backup.crs-matrix.h	/^} crs_mmap_mem;$/;"	t	typeref:struct:__anon3
+crs_mmap_mem	storage/crs-matrix.h	/^} crs_mmap_mem;$/;"	t	typeref:struct:__anon6
+crs_mmap_mem_cpy	storage/backup.crs-matrix.c	/^void crs_mmap_mem_cpy(crs_mmap_mem *dest, crs_mmap_mem* orig) {$/;"	f
+crs_mmap_mem_cpy	storage/crs-matrix.c	/^void crs_mmap_mem_cpy(crs_mmap_mem *dest, crs_mmap_mem* orig) {$/;"	f
+crs_mmap_mem_destroy	storage/backup.crs-matrix.c	/^void crs_mmap_mem_destroy(crs_mmap_mem *mem) {$/;"	f
+crs_mmap_mem_destroy	storage/crs-matrix.c	/^void crs_mmap_mem_destroy(crs_mmap_mem *mem) {$/;"	f
+crs_mmap_mem_new	storage/backup.crs-matrix.c	/^crs_mmap_mem *crs_mmap_mem_new(guint pages) {$/;"	f
+crs_mmap_mem_new	storage/crs-matrix.c	/^crs_mmap_mem *crs_mmap_mem_new(size_t size_mmap) {$/;"	f
+crs_mmap_mem_new_fd	storage/backup.crs-matrix.c	/^crs_mmap_mem *crs_mmap_mem_new_fd(int fd) {$/;"	f
+crs_mmap_mem_new_fd	storage/crs-matrix.c	/^crs_mmap_mem *crs_mmap_mem_new_fd(int fd) {$/;"	f
+crs_mmap_mem_overflow	storage/backup.crs-matrix.c	/^int crs_mmap_mem_overflow(crs_mmap_mem *mmap_mem, size_t len) {$/;"	f
+crs_mmap_mem_resize	storage/backup.crs-matrix.c	/^size_t crs_mmap_mem_resize(crs_mmap_mem *mem,guint extra_pages) {$/;"	f
+crs_mmap_mem_resize	storage/crs-matrix.c	/^size_t crs_mmap_mem_resize(crs_mmap_mem *mem,size_t extra_bytes) {$/;"	f
+crs_mmap_mem_sync	storage/backup.crs-matrix.c	/^void crs_mmap_mem_sync(crs_mmap_mem *mem) {$/;"	f
+crs_mmap_mem_sync	storage/crs-matrix.c	/^void crs_mmap_mem_sync(crs_mmap_mem *mem) {$/;"	f
+crs_relative_complement_size	storage/crs-matrix.c	/^guint crs_relative_complement_size(fs_rid *a,guint len_a,fs_rid *b,guint len_b) {$/;"	f
+crs_restruct_mem	storage/crs-matrix.c	/^void crs_restruct_mem(crs_mmap_mem *mem,guint *new_sizes) {$/;"	f
+crs_restruct_mem_bin	storage/crs-matrix.c	/^void crs_restruct_mem_bin(crs_mmap_mem *mem,unsigned char **bin_cursor_p,guint *new_sizes) {$/;"	f
+crs_rowlist_head	storage/crs-matrix.c	/^fs_rid *crs_rowlist_head(unsigned char *mem) {$/;"	f
+crs_rowlist_insert	storage/crs-matrix.c	/^void crs_rowlist_insert(unsigned char *mem,guint i,fs_rid val) {$/;"	f
+crs_rowlist_len	storage/crs-matrix.c	/^guint crs_rowlist_len(unsigned char *mem) {$/;"	f
+crs_rowlist_tail	storage/crs-matrix.c	/^fs_rid *crs_rowlist_tail(unsigned char *mem) {$/;"	f
+crs_rowptr_head	storage/crs-matrix.c	/^guint *crs_rowptr_head(unsigned char *mem) {$/;"	f
+crs_rowptr_insert	storage/crs-matrix.c	/^void crs_rowptr_insert(unsigned char *mem,guint i,fs_rid val) {$/;"	f
+crs_rowptr_len	storage/crs-matrix.c	/^guint crs_rowptr_len(unsigned char *mem) {$/;"	f
+crs_rowptr_tail	storage/crs-matrix.c	/^guint *crs_rowptr_tail(unsigned char *mem) {$/;"	f
+crs_segment	storage/crs.c	/^typedef struct _crs_segment crs_segment;$/;"	t	typeref:struct:_crs_segment	file:
+crs_size_ptr	storage/crs-matrix.c	/^size_t crs_size_ptr(unsigned char *mem) {$/;"	f
+cursor	storage/backup.crs-matrix.h	/^    crs_mmap_mem *cursor;$/;"	m	struct:__anon5
+cursor	storage/crs-matrix.h	/^    unsigned char *cursor;$/;"	m	struct:__anon8
+data	common/umac.c	/^    UINT8  data   [HASH_BUF_BYTES];    \/* Incomming data buffer           *\/$/;"	m	struct:__anon2	file:
+data	storage/backup.crs-matrix.h	/^    unsigned char* data;$/;"	m	struct:__anon3
+data	storage/crs-matrix.h	/^    unsigned char* data;$/;"	m	struct:__anon6
+db_data	storage/rdfindex.c	/^static KCDB* db_data = NULL;$/;"	v	file:
+db_hashes	storage/crs.c	/^static KCDB* db_hashes[HASHES_NUM];$/;"	v	file:
+db_hashes	storage/rdfindex.c	/^     KCDB* db_hashes;$/;"	m	struct:_import_data	file:
+db_hashes	storage/rdfindex.c	/^static KCDB* db_hashes = NULL;$/;"	v	file:
+default_graph	common/hash.h	/^	fs_rid default_graph;$/;"	m	struct:fs_globals
+dir_csr	storage/rdf-kb.h	/^    gchar *dir_csr;$/;"	m	struct:_rdf_kb
+dir_hashes	storage/rdf-kb.h	/^    gchar *dir_hashes;$/;"	m	struct:_rdf_kb
+do_dump	storage/rdf-dump.c	/^int do_dump(const char *kb_name,char *out) {$/;"	f
+do_import	storage/rdf-import.c	/^int do_import(const char *kb_name,char **uri,char **model,char *format,int files) {$/;"	f
+do_query	storage/rdf-query.c	/^int do_query(const char *kb_name,char *out) {$/;"	f
+empty	common/hash.h	/^	fs_rid empty;$/;"	m	struct:fs_globals
+endian_convert	common/umac.c	/^static void endian_convert(void *buf, UWORD bpw, UINT32 num_bytes)$/;"	f	file:
+endian_convert_if_le	common/umac.c	/^#define endian_convert_if_le(/;"	d	file:
+fd	storage/backup.crs-matrix.h	/^    int fd; \/* IF BACKED_FILE_MAPPED THIS HOLDS THE FILE DESC *\/$/;"	m	struct:__anon3
+fd	storage/crs-matrix.h	/^    int fd; \/* IF BACKED_FILE_MAPPED THIS HOLDS THE FILE DESC *\/$/;"	m	struct:__anon6
+fold_stmt	storage/crs.c	/^typedef struct _fold_stmt fold_stmt;$/;"	t	typeref:struct:_fold_stmt	file:
+fold_stmt_arr	storage/crs.c	/^    GPtrArray *fold_stmt_arr;$/;"	m	struct:_crs_segment	file:
+fs_c	common/hash.c	/^struct fs_globals fs_c;$/;"	v	typeref:struct:fs_globals
+fs_dmetaphone	common/hash.h	/^	fs_rid fs_dmetaphone;$/;"	m	struct:fs_globals
+fs_globals	common/hash.h	/^struct fs_globals {$/;"	s
+fs_hash_init	common/hash.c	/^void fs_hash_init()$/;"	f
+fs_hash_literal	common/hash.c	/^fs_rid (*fs_hash_literal)(const char *str, fs_rid attr) = NULL;$/;"	v
+fs_hash_literal_umac	common/hash.c	/^fs_rid fs_hash_literal_umac(const char *str, fs_rid attr)$/;"	f
+fs_hash_uri	common/hash.c	/^fs_rid (*fs_hash_uri)(const char *str) = NULL;$/;"	v
+fs_hash_uri_umac	common/hash.c	/^fs_rid fs_hash_uri_umac(const char *str)$/;"	f
+fs_rid	common/hash.h	/^typedef unsigned long long int fs_rid;$/;"	t
+fs_stem	common/hash.h	/^	fs_rid fs_stem;$/;"	m	struct:fs_globals
+fs_text_index	common/hash.h	/^	fs_rid fs_text_index;$/;"	m	struct:fs_globals
+fs_token	common/hash.h	/^	fs_rid fs_token;$/;"	m	struct:fs_globals
+g_array_insert_shift_guint	storage/backup.crs-matrix.c	/^void g_array_insert_shift_guint(GArray* arr,guint i,guint v) {$/;"	f
+g_array_insert_shift_rid	storage/backup.crs-matrix.c	/^void g_array_insert_shift_rid(GArray* arr,guint i,fs_rid v) {$/;"	f
+g_array_insert_shift_rid_many	storage/backup.crs-matrix.c	/^void g_array_insert_shift_rid_many(GArray *arr,fs_rid *vals,guint start,guint len) {$/;"	f
+g_ptr_array_insert_shift	storage/backup.crs-matrix.c	/^void g_ptr_array_insert_shift(GPtrArray* arr,guint i,gpointer p) {$/;"	f
+g_ptr_array_insert_shift_many	storage/backup.crs-matrix.c	/^void g_ptr_array_insert_shift_many(GPtrArray *arr,gpointer *vals,guint start,guint len) {$/;"	f
+g_rid	common/rdf-parser.c	/^    fs_rid g_rid;$/;"	m	struct:_rdf_parser_internal	file:
+gc	storage/rdfindex.c	/^    unsigned char *gc;$/;"	m	struct:_index_stmt	file:
+get_colind_len	storage/backup.crs-matrix.c	/^guint get_colind_len(crs_mmap_mem *mem) {$/;"	f
+get_colind_ptr	storage/backup.crs-matrix.c	/^fs_rid * get_colind_ptr(crs_mmap_mem *mem) {$/;"	f
+get_rowlist_len	storage/backup.crs-matrix.c	/^guint get_rowlist_len(crs_mmap_mem *mem) {$/;"	f
+get_rowlist_ptr	storage/backup.crs-matrix.c	/^fs_rid * get_rowlist_ptr(crs_mmap_mem *mem) {$/;"	f
+get_rowptr_len	storage/backup.crs-matrix.c	/^guint get_rowptr_len(crs_mmap_mem *mem) {$/;"	f
+get_rowptr_ptr	storage/backup.crs-matrix.c	/^guint * get_rowptr_ptr(crs_mmap_mem *mem) {$/;"	f
+get_uri_from_path	storage/crs.c	/^raptor_uri *get_uri_from_path(raptor_world* world,char* path) {$/;"	f
+get_uri_from_path	storage/rdfindex.c	/^raptor_uri *get_uri_from_path(raptor_world* world,char* path) {$/;"	f
+global_g_rid	storage/crs.c	/^fs_rid global_g_rid;$/;"	v
+global_g_rid	storage/rdfindex.c	/^fs_rid global_g_rid;$/;"	v
+global_g_s	storage/crs.c	/^unsigned char * global_g_s;$/;"	v
+global_g_s	storage/rdfindex.c	/^unsigned char * global_g_s;$/;"	v
+global_parse_time	common/rdf-parser.c	/^    GTimer *global_parse_time;$/;"	m	struct:_rdf_parser_internal	file:
+global_time	storage/crs.c	/^static GTimer *global_time = NULL;$/;"	v	file:
+global_time	storage/rdfindex.c	/^static GTimer *global_time = NULL;$/;"	v	file:
+gr	storage/crs.c	/^    fs_rid gr;$/;"	m	struct:_index_stmt	file:
+gr	storage/rdfindex.c	/^    fs_rid gr;$/;"	m	struct:_index_stmt	file:
+graphs	storage/crs.c	/^int graphs = 0;$/;"	v
+graphs	storage/rdfindex.c	/^int graphs = 0;$/;"	v
+hash	common/umac.c	/^    nh_ctx hash;                          \/* Hash context for L1 NH hash  *\/$/;"	m	struct:uhash_ctx	file:
+hash	common/umac.c	/^    uhash_ctx hash;          \/* Hash function for message compression    *\/$/;"	m	struct:umac_ctx	file:
+hash_stores	storage/rdf-kb.h	/^    KCDB **hash_stores;$/;"	m	struct:_rdf_kb
+i	storage/crs-matrix.h	/^    int i;$/;"	m	struct:__anon8
+import_data	storage/crs.c	/^typedef struct _import_data import_data;$/;"	t	typeref:struct:_import_data	file:
+import_data	storage/rdfindex.c	/^typedef struct _import_data import_data;$/;"	t	typeref:struct:_import_data	file:
+import_segment	storage/crs.c	/^     GPtrArray** import_segment;$/;"	m	struct:_import_data	file:
+import_segment	storage/crs.c	/^    GPtrArray* import_segment;$/;"	m	struct:_crs_construction_input	file:
+import_segment	storage/rdfindex.c	/^     GArray** import_segment;$/;"	m	struct:_import_data	file:
+import_worker	storage/rdfindex.c	/^void import_worker(gpointer worker_data, gpointer user_data) {$/;"	f
+index	storage/backup.crs-matrix.h	/^    crs_mmap_mem *index; \/* guint[3] + rowlist, rowptr, colind *\/ $/;"	m	struct:__anon4
+index	storage/crs-matrix.h	/^    crs_mmap_mem *index; \/* guint[3] + rowlist, rowptr, colind *\/ $/;"	m	struct:__anon7
+index	storage/rdf-kb.h	/^    crs_matrix_index *index;$/;"	m	struct:_rdf_kb
+index_conf	storage/backup.crs-matrix.h	/^    crs_matrix_index *index_conf;$/;"	m	struct:__anon4
+index_conf	storage/crs-matrix.h	/^    crs_matrix_index *index_conf;$/;"	m	struct:__anon7
+index_stmt	storage/crs.c	/^typedef struct _index_stmt index_stmt;$/;"	t	typeref:struct:_index_stmt	file:
+index_stmt	storage/rdfindex.c	/^typedef struct _index_stmt index_stmt;$/;"	t	typeref:struct:_index_stmt	file:
+internal_worker_data	storage/rdf-kb.c	/^} internal_worker_data;$/;"	t	typeref:struct:__anon9	file:
+internal_worker_merge	storage/rdf-kb.c	/^} internal_worker_merge;$/;"	t	typeref:struct:__anon10	file:
+ip_aux	common/umac.c	/^static UINT64 ip_aux(UINT64 t, UINT64 *ipkp, UINT64 data)$/;"	f	file:
+ip_keys	common/umac.c	/^    UINT64 ip_keys[STREAMS*4];            \/* Inner-product keys           *\/$/;"	m	struct:uhash_ctx	file:
+ip_long	common/umac.c	/^static void ip_long(uhash_ctx_t ahc, char *res)$/;"	f	file:
+ip_reduce_p36	common/umac.c	/^static UINT32 ip_reduce_p36(UINT64 t)$/;"	f	file:
+ip_short	common/umac.c	/^static void ip_short(uhash_ctx_t ahc, UINT8 *nh_res, char *res)$/;"	f	file:
+ip_trans	common/umac.c	/^    UINT32 ip_trans[STREAMS];             \/* Inner-product translation    *\/$/;"	m	struct:uhash_ctx	file:
+istmt_free_func	storage/crs.c	/^void istmt_free_func(gpointer data) {$/;"	f
+kb	common/rdf-parser.c	/^    rdf_kb* kb;$/;"	m	struct:_rdf_parser_internal	file:
+kb_matrix	storage/rdf-kb.c	/^    crs_matrix *kb_matrix; $/;"	m	struct:__anon10	file:
+kdf	common/umac.c	/^void kdf(void *buffer_ptr, aes_int_key key, UINT8 index, int nbytes)$/;"	f
+lang_de	common/hash.h	/^	fs_rid lang_de;$/;"	m	struct:fs_globals
+lang_en	common/hash.h	/^	fs_rid lang_en;$/;"	m	struct:fs_globals
+lang_es	common/hash.h	/^	fs_rid lang_es;$/;"	m	struct:fs_globals
+lang_fr	common/hash.h	/^	fs_rid lang_fr;$/;"	m	struct:fs_globals
+ldfdarwin	darwin.mk	/^export ldfdarwin := $(shell (uname | grep Darwin > \/dev\/null) && echo "-bind_at_load -multiply_defined suppress")$/;"	m
+ldflinux	darwin.mk	/^export ldflinux := $(shell (uname | grep Linux > \/dev\/null) && echo "-rdynamic")$/;"	m
+len	storage/backup.crs-matrix.h	/^    size_t len;$/;"	m	struct:__anon3
+len	storage/crs-matrix.h	/^    size_t len;$/;"	m	struct:__anon6
+level1	storage/crs.c	/^    fs_rid level1;$/;"	m	struct:_rid_2d	file:
+level2	storage/crs.c	/^    fs_rid level2;$/;"	m	struct:_rid_2d	file:
+log	common/error.h	/^#define log(/;"	d
+log_debug	common/error.h	/^#define log_debug(/;"	d
+log_info	common/error.h	/^#define log_info(/;"	d
+log_warn	common/error.h	/^#define log_warn(/;"	d
+m36	common/umac.c	/^#define m36 /;"	d	file:
+main	common/umac.c	/^int main(void)$/;"	f
+main	dumb.c	/^int main(int argc,char** args) {$/;"	f
+main	explore.c	/^int main(int argc,char** args) {$/;"	f
+main	mytest.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	profile.c	/^int main(int argc,char** args) {$/;"	f
+main	storage/crs.c	/^int main(int argc,char** args) {$/;"	f
+main	storage/rdf-dump.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	storage/rdf-import.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	storage/rdf-query.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	storage/rdfindex.c	/^int main(int argc,char** args) {$/;"	f
+main	test/test.c	/^int main(int argc, char** argv) {$/;"	f
+main	testmmap.c	/^int main(int argc,char** args) {$/;"	f
+mapped	storage/backup.crs-matrix.h	/^    int mapped; \/* 0 = NOT_MAPPED, 1 ANON_MAPPED, 2 BACKED_FILE_MAPPED *\/$/;"	m	struct:__anon3
+mapped	storage/crs-matrix.h	/^    int mapped; \/* 0 = NOT_MAPPED, 1 ANON_MAPPED, 2 BACKED_FILE_MAPPED *\/$/;"	m	struct:__anon6
+matrix	storage/rdf-kb.c	/^   crs_matrix *matrix; $/;"	m	struct:__anon9	file:
+matrix	storage/rdf-kb.h	/^    crs_matrix **matrix;$/;"	m	struct:_rdf_kb
+merge_matrix	storage/rdf-kb.c	/^    crs_matrix *merge_matrix;$/;"	m	struct:__anon10	file:
+mmword	common/umac.c	/^#define mmword /;"	d	file:
+model	common/rdf-parser.c	/^    unsigned char *model;$/;"	m	struct:_rdf_parser_internal	file:
+msg_len	common/umac.c	/^    UINT32 msg_len;                       \/* Total length of data passed  *\/$/;"	m	struct:uhash_ctx	file:
+my_str_dup	storage/crs.c	/^gchar *my_str_dup(const gchar *s) {$/;"	f
+name	storage/rdf-kb.h	/^    gchar *name;$/;"	m	struct:_rdf_kb
+new_fold_stmt_init	storage/crs.c	/^fold_stmt *new_fold_stmt_init(pointer_stmt pstmt) {$/;"	f
+new_index_stmt	storage/crs.c	/^pointer_stmt new_index_stmt(fs_rid g_rid,fs_rid s_rid,fs_rid p_rid,fs_rid o_rid,$/;"	f
+new_matrix	storage/rdf-kb.c	/^    crs_matrix *new_matrix;$/;"	m	struct:__anon10	file:
+new_rid_2d	storage/crs.c	/^rid_2d *new_rid_2d(fs_rid level1, fs_rid level2) {$/;"	f
+next_data_empty	common/umac.c	/^    int next_data_empty;    \/* Bookeeping variable for data buffer.       *\/$/;"	m	struct:__anon2	file:
+nh	common/umac.c	/^static void nh(nh_ctx *hc, UINT8 *buf, UINT32 padded_len,$/;"	f	file:
+nh_aux	common/umac.c	/^static void nh_aux(void *kp, void *dp, void *hp, UINT32 dlen)$/;"	f	file:
+nh_aux_1	common/umac.c	/^static void nh_aux_1(void *kp, void *dp, void *hp, UINT32 dlen)$/;"	f	file:
+nh_aux_2	common/umac.c	/^static void nh_aux_2(void *kp, void *dp, void *hp, UINT32 dlen)$/;"	f	file:
+nh_ctx	common/umac.c	/^} nh_ctx;$/;"	t	typeref:struct:__anon2	file:
+nh_final	common/umac.c	/^static void nh_final(nh_ctx *hc, UINT8 *result)$/;"	f	file:
+nh_init	common/umac.c	/^static void nh_init(nh_ctx *hc, aes_int_key prf_key)$/;"	f	file:
+nh_key	common/umac.c	/^    UINT8  nh_key [L1_KEY_LEN + L1_KEY_SHIFT * (STREAMS - 1)]; \/* NH Key *\/$/;"	m	struct:__anon2	file:
+nh_reset	common/umac.c	/^static void nh_reset(nh_ctx *hc)$/;"	f	file:
+nh_transform	common/umac.c	/^static void nh_transform(nh_ctx *hc, UINT8 *buf, UINT32 nbytes)$/;"	f	file:
+nh_update	common/umac.c	/^static void nh_update(nh_ctx *hc, UINT8 *buf, UINT32 nbytes)$/;"	f	file:
+nonce	common/umac.c	/^    UINT8 nonce[AES_BLOCK_LEN];  \/* The AES input making above cache  *\/$/;"	m	struct:__anon1	file:
+oc	storage/rdfindex.c	/^    unsigned char *oc;$/;"	m	struct:_index_stmt	file:
+offset	storage/backup.crs-matrix.h	/^    size_t offset;$/;"	m	struct:__anon5
+offset	storage/crs-matrix.h	/^    size_t offset;$/;"	m	struct:__anon8
+or	storage/crs.c	/^    fs_rid or;$/;"	m	struct:_index_stmt	file:
+or	storage/rdfindex.c	/^    fs_rid or;$/;"	m	struct:_index_stmt	file:
+p36	common/umac.c	/^#define p36 /;"	d	file:
+p64	common/umac.c	/^#define p64 /;"	d	file:
+parser_world	common/rdf-parser.c	/^static raptor_world* parser_world;$/;"	v	file:
+partial_parse_time	common/rdf-parser.c	/^    GTimer *partial_parse_time;$/;"	m	struct:_rdf_parser_internal	file:
+partial_time	storage/crs.c	/^static GTimer *partial_time = NULL;$/;"	v	file:
+partial_time	storage/rdfindex.c	/^static GTimer *partial_time = NULL;$/;"	v	file:
+pbuf	common/umac.c	/^static void pbuf(void *buf, UWORD n, char *s)$/;"	f	file:
+pc	storage/rdfindex.c	/^    unsigned char *pc;$/;"	m	struct:_index_stmt	file:
+pdf	common/umac.c	/^    pdf_ctx pdf;             \/* PDF for hashed output                    *\/$/;"	m	struct:umac_ctx	file:
+pdf_ctx	common/umac.c	/^} pdf_ctx;$/;"	t	typeref:struct:__anon1	file:
+pdf_gen_xor	common/umac.c	/^static void pdf_gen_xor(pdf_ctx *pc, UINT8 nonce[8], UINT8 buf[8])$/;"	f	file:
+pdf_init	common/umac.c	/^static void pdf_init(pdf_ctx *pc, aes_int_key prf_key)$/;"	f	file:
+pkgs	common/Makefile	/^pkgs = glib-2.0 raptor2$/;"	m
+pkgs	storage/Makefile	/^pkgs = kyotocabinet raptor2 glib-2.0 gthread-2.0$/;"	m
+pointer_stmt	storage/crs.c	/^typedef index_stmt* pointer_stmt;$/;"	t	file:
+poly64	common/umac.c	/^static UINT64 poly64(UINT64 cur, UINT64 key, UINT64 data)$/;"	f	file:
+poly_accum	common/umac.c	/^    UINT64 poly_accum[STREAMS];           \/* poly hash result             *\/$/;"	m	struct:uhash_ctx	file:
+poly_hash	common/umac.c	/^static void poly_hash(uhash_ctx_t hc, UINT32 data_in[])$/;"	f	file:
+poly_key_8	common/umac.c	/^    UINT64 poly_key_8[STREAMS];           \/* p64 poly keys                *\/$/;"	m	struct:uhash_ctx	file:
+pool	storage/crs.c	/^static GThreadPool* pool;$/;"	v	file:
+pool	storage/rdfindex.c	/^static GThreadPool* pool;$/;"	v	file:
+pr	storage/crs.c	/^    fs_rid pr;$/;"	m	struct:_index_stmt	file:
+pr	storage/rdfindex.c	/^    fs_rid pr;$/;"	m	struct:_index_stmt	file:
+prf_key	common/umac.c	/^    aes_int_key prf_key;         \/* Expanded AES key for PDF          *\/$/;"	m	struct:__anon1	file:
+primitive_verify	common/umac.c	/^static void primitive_verify(void)$/;"	f	file:
+print_array_fs_rid	storage/backup-crs-matrix-io.c	/^void print_array_fs_rid(const char* lit,GArray *arr) {$/;"	f
+print_array_guint	storage/backup-crs-matrix-io.c	/^void print_array_guint(const char* lit,GArray *arr) {$/;"	f
+print_crs	explore.c	/^size_t print_crs(unsigned char *data) {$/;"	f
+print_guint_arr	explore.c	/^void print_guint_arr(guint *a,guint l) {$/;"	f
+print_rid_arr	explore.c	/^void print_rid_arr(rid *a,guint l) {$/;"	f
+quads	common/rdf-parser.c	/^    GPtrArray **quads;$/;"	m	struct:_rdf_parser_internal	file:
+rcon	common/rijndael-alg-fst.c	/^static const u32 rcon[] = {$/;"	v	file:
+rdf_error_log	common/error.c	/^void rdf_error_log(int level,const char *func, int line, const char *s, ...) {$/;"	f
+rdf_kb	storage/rdf-kb.h	/^typedef struct _rdf_kb rdf_kb;$/;"	t	typeref:struct:_rdf_kb
+rdf_kb_close	storage/rdf-kb.c	/^void rdf_kb_close(rdf_kb *kb,GError **error) {$/;"	f
+rdf_kb_construct_matrix	storage/rdf-kb.c	/^void rdf_kb_construct_matrix(gpointer worker_data, gpointer user_data) {$/;"	f
+rdf_kb_dump	storage/rdf-kb.c	/^void rdf_kb_dump(rdf_kb *kb, const char *file_out, GError **error) {$/;"	f
+rdf_kb_fill_quad	storage/rdf-kb.c	/^void rdf_kb_fill_quad(fs_rid *quad,crs_matrix_index *index,fs_rid row, fs_rid col, fs_rid row_bin, fs_rid col_bin) {$/;"	f
+rdf_kb_import_data_from_file	storage/rdf-kb.c	/^void rdf_kb_import_data_from_file(rdf_kb *kb,const char *uri,const char *model,const char *format, GError **error) {$/;"	f
+rdf_kb_log_unhashed_quad	storage/rdf-kb.c	/^void rdf_kb_log_unhashed_quad(rdf_kb *kb, fs_rid *quad,FILE *out) {$/;"	f
+rdf_kb_merge_matrix	storage/rdf-kb.c	/^void rdf_kb_merge_matrix(gpointer worker_data, gpointer user_data) {$/;"	f
+rdf_kb_open	storage/rdf-kb.c	/^rdf_kb *rdf_kb_open(const char *kb_name,int create,GError **error) {$/;"	f
+rdf_kb_open_hash_storage	storage/rdf-kb.c	/^static KCDB* rdf_kb_open_hash_storage(int segment,gchar *kb_name,GError **error) {$/;"	f	file:
+rdf_kb_rid_unhash	storage/rdf-kb.c	/^char *rdf_kb_rid_unhash(rdf_kb *kb, fs_rid rid) {$/;"	f
+rdf_kb_size	storage/rdf-kb.c	/^guint rdf_kb_size(rdf_kb *kb,GError **error) {$/;"	f
+rdf_kb_sync	storage/rdf-kb.c	/^void rdf_kb_sync(rdf_kb *kb,GError **error) {$/;"	f
+rdf_parser_close	common/rdf-parser.c	/^void rdf_parser_close() {$/;"	f
+rdf_parser_init	common/rdf-parser.c	/^void rdf_parser_init() {$/;"	f
+rdf_parser_internal	common/rdf-parser.c	/^typedef struct _rdf_parser_internal rdf_parser_internal;$/;"	t	typeref:struct:_rdf_parser_internal	file:
+rdf_parser_new_quad	common/rdf-parser.c	/^static fs_rid *rdf_parser_new_quad(fs_rid g,fs_rid s,fs_rid p,fs_rid o) {$/;"	f	file:
+rdf_parser_parse_file_kb	common/rdf-parser.c	/^GPtrArray** rdf_parser_parse_file_kb(rdf_kb *kb,const char *file_to_parse,const char *model,const char *format,GError **error) {$/;"	f
+rdf_parser_parser_create	common/rdf-parser.c	/^static raptor_parser *rdf_parser_parser_create(const char *resource_uri,const char *format) {$/;"	f	file:
+rdf_parser_path_to_uri	common/rdf-parser.c	/^static raptor_uri *rdf_parser_path_to_uri(raptor_world* world,char* path) {$/;"	f	file:
+rdf_parser_statement_handler	common/rdf-parser.c	/^static void rdf_parser_statement_handler(void* user_data, const raptor_statement* st) {$/;"	f	file:
+rdf_type	common/hash.h	/^	fs_rid rdf_type;$/;"	m	struct:fs_globals
+rdfs_label	common/hash.h	/^	fs_rid rdfs_label;$/;"	m	struct:fs_globals
+rid	explore.c	/^typedef unsigned long long int rid;$/;"	t	file:
+rid_2d	storage/crs.c	/^typedef struct _rid_2d rid_2d;$/;"	t	typeref:struct:_rid_2d	file:
+rids_2d	storage/crs.c	/^    GPtrArray *rids_2d;$/;"	m	struct:_fold_stmt	file:
+rijndaelDecrypt	common/rijndael-alg-fst.c	/^void rijndaelDecrypt(const u32 rk[\/*4*(Nr + 1)*\/], int Nr, const u8 ct[16], u8 pt[16]) {$/;"	f
+rijndaelDecryptRound	common/rijndael-alg-fst.c	/^void rijndaelDecryptRound(const u32 rk[\/*4*(Nr + 1)*\/], int Nr, u8 block[16], int rounds) {$/;"	f
+rijndaelEncrypt	common/rijndael-alg-fst.c	/^void rijndaelEncrypt(const u32 rk[\/*4*(Nr + 1)*\/], int Nr, const u8 pt[16], u8 ct[16]) {$/;"	f
+rijndaelEncryptRound	common/rijndael-alg-fst.c	/^void rijndaelEncryptRound(const u32 rk[\/*4*(Nr + 1)*\/], int Nr, u8 block[16], int rounds) {$/;"	f
+rijndaelKeySetupDec	common/rijndael-alg-fst.c	/^int rijndaelKeySetupDec(u32 rk[\/*4*(Nr + 1)*\/], const u8 cipherKey[], int keyBits) {$/;"	f
+rijndaelKeySetupEnc	common/rijndael-alg-fst.c	/^int rijndaelKeySetupEnc(u32 rk[\/*4*(Nr + 1)*\/], const u8 cipherKey[], int keyBits) {$/;"	f
+row	storage/backup.crs-matrix.h	/^    crs_matrix_index_type row;$/;"	m	struct:_crs_matrix_index
+row	storage/crs-matrix.h	/^    crs_matrix_index_type row;$/;"	m	struct:_crs_matrix_index
+row_bin	storage/crs-matrix.h	/^    crs_matrix_index_type row_bin;$/;"	m	struct:_crs_matrix_index
+row_bit	storage/backup.crs-matrix.h	/^    crs_matrix_index_type row_bit;$/;"	m	struct:_crs_matrix_index
+rowlist	storage/backup.crs-matrix.h	/^    fs_rid *rowlist;$/;"	m	struct:__anon5
+rowlist	storage/crs.c	/^    GArray *rowlist;$/;"	m	struct:_crs_segment	file:
+rowlist_head	storage/crs-matrix.h	/^    fs_rid *rowlist_head;$/;"	m	struct:__anon8
+rowlist_len	storage/backup.crs-matrix.h	/^    guint rowlist_len;$/;"	m	struct:__anon5
+rowlist_len	storage/crs-matrix.h	/^    guint rowlist_len;$/;"	m	struct:__anon8
+rowptr	storage/backup.crs-matrix.h	/^    guint *rowptr;$/;"	m	struct:__anon5
+rowptr	storage/crs.c	/^    GPtrArray *rowptr;$/;"	m	struct:_crs_segment	file:
+rowptr_head	storage/crs-matrix.h	/^    guint *rowptr_head;$/;"	m	struct:__anon8
+rowptr_len	storage/backup.crs-matrix.h	/^    guint rowptr_len;$/;"	m	struct:__anon5
+rowptr_len	storage/crs-matrix.h	/^    guint rowptr_len;$/;"	m	struct:__anon8
+rowptr_list_size	storage/backup.crs-matrix.c	/^guint rowptr_list_size(GPtrArray *values,int row_position) {$/;"	f
+run_cpb_test	common/umac.c	/^static double run_cpb_test(umac_ctx_t ctx, int nbytes, char *data_ptr,$/;"	f	file:
+sc	storage/rdfindex.c	/^    unsigned char *sc;$/;"	m	struct:_index_stmt	file:
+segment	storage/crs.c	/^    crs_segment **segment;$/;"	m	struct:_crs_construction_input	file:
+segments	storage/crs.c	/^int segments[SEGMENTS];$/;"	v
+segments	storage/rdfindex.c	/^int segments[SEGMENTS];$/;"	v
+some_free_memory	profile.c	/^void *some_free_memory() {$/;"	f
+some_not_free_memory	profile.c	/^void *some_not_free_memory() {$/;"	f
+sort_quads	storage/backup.crs-matrix.c	/^gint sort_quads (gconstpointer a, gconstpointer b, gpointer user_data) {$/;"	f
+sort_quads	storage/crs-matrix.c	/^gint sort_quads (gconstpointer a, gconstpointer b, gpointer user_data) {$/;"	f
+speed_test	common/umac.c	/^static void speed_test(void)$/;"	f	file:
+sr	storage/crs.c	/^    fs_rid sr;$/;"	m	struct:_index_stmt	file:
+sr	storage/rdfindex.c	/^    fs_rid sr;$/;"	m	struct:_index_stmt	file:
+state	common/umac.c	/^    UINT64 state[STREAMS];               \/* on-line state     *\/$/;"	m	struct:__anon2	file:
+statement_handler	storage/crs.c	/^void statement_handler(void* user_data, const raptor_statement* st) {$/;"	f
+statement_handler	storage/rdfindex.c	/^void statement_handler(void* user_data, const raptor_statement* st) {$/;"	f
+system_config	common/hash.h	/^	fs_rid system_config;$/;"	m	struct:fs_globals
+temp_values	storage/backup.crs-matrix.h	/^    GPtrArray *temp_values;$/;"	m	struct:__anon4
+temp_values	storage/crs-matrix.h	/^    GPtrArray *temp_values;$/;"	m	struct:__anon7
+timestamp_hash	common/rdf-parser.c	/^gchar *timestamp_hash()$/;"	f
+tmp_quad	storage/crs.c	/^char tmp_quad[QUAD_SIZE+1];$/;"	v
+tmp_quad	storage/rdfindex.c	/^char tmp_quad[QUAD_SIZE+1];$/;"	v
+trig	common/rdf-parser.c	/^    int trig;$/;"	m	struct:_rdf_parser_internal	file:
+u16	common/rijndael-alg-fst.h	/^typedef unsigned short	u16;	$/;"	t
+u32	common/rijndael-alg-fst.h	/^typedef unsigned int	u32;$/;"	t
+u8	common/rijndael-alg-fst.h	/^typedef unsigned char	u8;	$/;"	t
+uhash	common/umac.c	/^int uhash(uhash_ctx_t ahc, char *msg, long len, char *res)$/;"	f
+uhash_alloc	common/umac.c	/^uhash_ctx_t uhash_alloc(char key[])$/;"	f
+uhash_ctx	common/umac.c	/^typedef struct uhash_ctx {$/;"	s	file:
+uhash_ctx	common/umac.c	/^} uhash_ctx;$/;"	t	typeref:struct:uhash_ctx	file:
+uhash_ctx_t	common/umac.h	/^typedef struct uhash_ctx *uhash_ctx_t;$/;"	t	typeref:struct:uhash_ctx
+uhash_final	common/umac.c	/^int uhash_final(uhash_ctx_t ctx, char *res)$/;"	f
+uhash_free	common/umac.c	/^int uhash_free(uhash_ctx_t ctx)$/;"	f
+uhash_init	common/umac.c	/^static void uhash_init(uhash_ctx_t ahc, aes_int_key prf_key)$/;"	f	file:
+uhash_reset	common/umac.c	/^int uhash_reset(uhash_ctx_t pc)$/;"	f
+uhash_update	common/umac.c	/^int uhash_update(uhash_ctx_t ctx, char *input, long len)$/;"	f
+umac	common/umac.c	/^int umac(umac_ctx_t ctx, char *input, $/;"	f
+umac_ctx	common/umac.c	/^typedef struct umac_ctx {$/;"	s	file:
+umac_ctx	common/umac.c	/^} umac_ctx;$/;"	t	typeref:struct:umac_ctx	file:
+umac_ctx_t	common/umac.h	/^typedef struct umac_ctx *umac_ctx_t;$/;"	t	typeref:struct:umac_ctx
+umac_delete	common/umac.c	/^int umac_delete(umac_ctx_t ctx)$/;"	f
+umac_final	common/umac.c	/^int umac_final(umac_ctx_t ctx, char tag[], char nonce[8])$/;"	f
+umac_new	common/umac.c	/^umac_ctx_t umac_new(char key[])$/;"	f
+umac_reset	common/umac.c	/^int umac_reset(umac_ctx_t ctx)$/;"	f
+umac_update	common/umac.c	/^int umac_update(umac_ctx_t ctx, char *input, long len)$/;"	f
+umac_verify	common/umac.c	/^static int umac_verify(void)$/;"	f	file:
+umac_wrapper	common/hash.c	/^fs_rid umac_wrapper(const char *str, fs_rid nonce_in)$/;"	f
+update_crs_segment	storage/crs.c	/^fold_stmt *update_crs_segment(crs_segment *segment,pointer_stmt pstmt) {$/;"	f
+visitempty	test/test.c	/^const char* visitempty(const char* kbuf, size_t ksiz, size_t *sp, void* opq) {$/;"	f
+visitfull	test/test.c	/^const char* visitfull(const char* kbuf, size_t ksiz,$/;"	f
+xsd_boolean	common/hash.h	/^	fs_rid xsd_boolean;$/;"	m	struct:fs_globals
+xsd_byte	common/hash.h	/^	fs_rid xsd_byte;$/;"	m	struct:fs_globals
+xsd_datetime	common/hash.h	/^	fs_rid xsd_datetime;$/;"	m	struct:fs_globals
+xsd_decimal	common/hash.h	/^	fs_rid xsd_decimal;$/;"	m	struct:fs_globals
+xsd_double	common/hash.h	/^	fs_rid xsd_double;$/;"	m	struct:fs_globals
+xsd_float	common/hash.h	/^	fs_rid xsd_float;$/;"	m	struct:fs_globals
+xsd_int	common/hash.h	/^	fs_rid xsd_int;$/;"	m	struct:fs_globals
+xsd_integer	common/hash.h	/^	fs_rid xsd_integer;$/;"	m	struct:fs_globals
+xsd_long	common/hash.h	/^	fs_rid xsd_long;$/;"	m	struct:fs_globals
+xsd_ninteger	common/hash.h	/^	fs_rid xsd_ninteger;$/;"	m	struct:fs_globals
+xsd_nninteger	common/hash.h	/^	fs_rid xsd_nninteger;$/;"	m	struct:fs_globals
+xsd_npinteger	common/hash.h	/^	fs_rid xsd_npinteger;$/;"	m	struct:fs_globals
+xsd_pinteger	common/hash.h	/^	fs_rid xsd_pinteger;$/;"	m	struct:fs_globals
+xsd_short	common/hash.h	/^	fs_rid xsd_short;$/;"	m	struct:fs_globals
+xsd_string	common/hash.h	/^	fs_rid xsd_string;$/;"	m	struct:fs_globals
+xsd_ubyte	common/hash.h	/^	fs_rid xsd_ubyte;$/;"	m	struct:fs_globals
+xsd_uint	common/hash.h	/^	fs_rid xsd_uint;$/;"	m	struct:fs_globals
+xsd_ulong	common/hash.h	/^	fs_rid xsd_ulong;$/;"	m	struct:fs_globals
+xsd_ushort	common/hash.h	/^	fs_rid xsd_ushort;$/;"	m	struct:fs_globals
+zero_pad	common/umac.c	/^static void zero_pad(UINT8 *p, int nbytes)$/;"	f	file:
