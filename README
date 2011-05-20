@@ -12,6 +12,19 @@ Dependencies
 * json-glib
   https://github.com/ebassi/json-glib.git
 
+Notes
+-----
+
+create KB:
+
+       ./storage/rdf-import -f FORMAT KB_LOCATION LIST_OF_FILES
+       ./storage/rdf-import -f nquads ./tmp/test f1.nq f2.nq
+       ./storage/rdf-import -f turtle ./tmp/test -m http://model1 f1.turtle -m http://model2 f2.turtle
+       ./storage/rdf-import -f turtle ./tmp/test -Mhttp://model f1.turtle f2.turtle
+
+helper explore:
+
+
 Acknowledgements
 ---------------
  4store (http://4store.org) for its hash.c implementation.

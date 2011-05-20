@@ -168,7 +168,6 @@ void rdf_kb_import_data_from_file(rdf_kb *kb,const char *uri,const char *model,c
         worker_merge[nseg].new_matrix = worker_data[nseg].matrix;
         worker_merge[nseg].kb_matrix = kb->matrix[nseg];
         g_thread_pool_push(pool, &worker_merge[nseg], NULL);
-        //rdf_kb_merge_matrix(&worker_merge[nseg],NULL);
         kb->matrix[nseg] = worker_data[nseg].matrix;
     }
     g_thread_pool_free(pool,FALSE,TRUE);
@@ -177,7 +176,7 @@ void rdf_kb_import_data_from_file(rdf_kb *kb,const char *uri,const char *model,c
     }
     GError *error_persist=NULL;
     rdf_kb_sync(kb,&error_persist);
-    /* check error */ 
+    /* TODO: check errors */ 
 
     rdf_parser_close();
 }
@@ -345,7 +344,7 @@ guint rdf_kb_size(rdf_kb *kb,GError **error) {
     return size;
 }
 
-crs_bind_data **rdf_kb_json_bind(rdf_kb *kb,char *json_bind,int just_count,int load_from_file,GError **error) {
+crs_bind_data **rdf_kb_json_bind(rdf_kb *kb,char *json_bind,int just_count,int use_inverse_bin_index,int load_from_file,GError **error) {
    if (!fs_hash_uri)
        fs_hash_init();
    GPtrArray *binds = parse_json_bind(json_bind,load_from_file);
@@ -355,7 +354,7 @@ crs_bind_data **rdf_kb_json_bind(rdf_kb *kb,char *json_bind,int just_count,int l
    crs_bind_data **binds_res = malloc(binds->len * sizeof(crs_bind_data *));
    for(guint i=0; i <  binds->len; i++) {
         GPtrArray *bind_input = (GPtrArray *)g_ptr_array_index(binds,i);
-        crs_bind_data* bind_data = crs_bind_data_init_new(bind_input);
+        crs_bind_data* bind_data = crs_bind_data_init_new(bind_input, use_inverse_bin_index);
         crs_bind(bind_data, kb);
         log_debug("end crs_bind");
         guint total = 0;

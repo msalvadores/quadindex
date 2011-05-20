@@ -53,25 +53,21 @@ guint fs_rid_next(fs_rid_iterator *it) {
         return G_MAXUINT;
 
     fs_rid m = it->m[it->mc];
-    //log_debug("%llx",m);
     guint ll = it->ll - it->lc;
 
     fs_rid *l = it->l + it->lc;
     guint mid = 0;
     if (m != FS_RID_NULL) {
         guint min=0,max=ll;
-        //log_debug("before while ll %u",ll);
         if (ll>1) {
         do {
             mid = min + (max - min) / 2;
-            //log_debug("mid %u",mid);
             if (m > l[mid])
                 min = mid + 1;
              else
                 max = mid - 1;
         } while (l[mid] != m && !(min > max) && mid > 0 && mid < ll);
         }
-        //log_debug("after while");
         it->mc++;
         it->lc += mid;
         if ( m ==  l[mid]) 
@@ -132,7 +128,12 @@ void crs_bind_segment(gpointer segment_data, gpointer pbind_data) {
   
     fs_rid *col_bin = bind_data->rids[bind_data->index->col_bin]; 
     guint col_bin_len = bind_data->rid_sizes[bind_data->index->col_bin]; 
-
+    
+    if (bind_data->use_inverse_bin_index && !matrix->bin_inverse) {
+       crs_matrix_inverse_list_build(matrix);
+    } else
+        log_debug("No inverse index");
+    
     fs_rid col_rid = FS_RID_NULL, row_rid = FS_RID_NULL,  
     col_bin_rid = FS_RID_NULL, row_bin_rid = FS_RID_NULL;
 
@@ -159,14 +160,11 @@ void crs_bind_segment(gpointer segment_data, gpointer pbind_data) {
     fs_rid colval,rowval,colbinval,rowbinval;
     guint match=0; 
     while((row_match=fs_rid_next(it_row)) < G_MAXUINT) {
-        //log_debug("row match index %d",row_match);
         rowptr_init = rowptr[row_match];
         rowptr_end = rowptr[row_match+1];
-        //log_debug("row pointers [%d,%d]",rowptr_init,rowptr_end);
         fs_rid_iterator_set(it_col,colind + rowptr_init, rowptr_end - rowptr_init, col, col_len);
         while((col_match=fs_rid_next(it_col)) < G_MAXUINT) {
             crs_mmap_bin_iterator_fetch(bin_it, col_match + rowptr_init);
-            //log_debug("bin iterator positioned %u, eltos %u", bin_it->i, crs_colind_len(bin_it->cursor));
             rowbinptr = bin_it->rowptr_head;
             colbinind = bin_it->colind_head;
             fs_rid_iterator_set(it_bin_row, bin_it->rowlist_head, bin_it->rowlist_len, row_bin, row_bin_len);
@@ -181,14 +179,11 @@ void crs_bind_segment(gpointer segment_data, gpointer pbind_data) {
                     rowbinval=bin_it->rowlist_head[row_bin_match];
                     colbinval=colbinind[col_bin_match + rowptr_bin_init];
 
-//log_debug("MATCH [row:%llx col:%llx row_bin:%llx col_bin:%llx]",rowval,colval,rowbinval,colbinval);
-
-    crs_bind_seg_result_append(rs,
-        undo_index(bind_data->index,GRAPH,rowval,colval,rowbinval,colbinval),
-        undo_index(bind_data->index,SUBJECT,rowval,colval,rowbinval,colbinval),
-        undo_index(bind_data->index,PREDICATE,rowval,colval,rowbinval,colbinval),
-        undo_index(bind_data->index,OBJECT,rowval,colval,rowbinval,colbinval)
-        );
+                    crs_bind_seg_result_append(rs,
+                        undo_index(bind_data->index,GRAPH,rowval,colval,rowbinval,colbinval),
+                        undo_index(bind_data->index,SUBJECT,rowval,colval,rowbinval,colbinval),
+                        undo_index(bind_data->index,PREDICATE,rowval,colval,rowbinval,colbinval),
+                        undo_index(bind_data->index,OBJECT,rowval,colval,rowbinval,colbinval));
                 }
             }
         }
@@ -340,7 +335,7 @@ GPtrArray *parse_json_bind(char *bind_input,int load_from_file) {
     return res;
 }
 
-crs_bind_data *crs_bind_data_init_new(GPtrArray *bind) {
+crs_bind_data *crs_bind_data_init_new(GPtrArray *bind, int use_inverse_bin_index) {
     crs_bind_data *res = malloc(sizeof(crs_bind_data));
     res->rids =  malloc(4 *sizeof(fs_rid *));
     res->rid_sizes =  malloc(4 *sizeof(guint *));
@@ -360,6 +355,6 @@ crs_bind_data *crs_bind_data_init_new(GPtrArray *bind) {
     for (int i = 0; i < SEGMENTS; i++) {
        res->seg_rs[i] = crs_bind_seg_result_new();
     } 
-
+    res->use_inverse_bin_index = use_inverse_bin_index;
     return res;
 }

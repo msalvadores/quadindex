@@ -779,16 +779,13 @@ crs_matrix *crs_matrix_merge(crs_matrix *kb_matrix, crs_matrix *new_matrix) {
                     size_t new_bin_len = 0;
                     //log_debug("new_bin_it->i %d x %d start %d",new_bin_it->i,x,start);
                     unsigned char *bits_new = new_bin_it->cursor; 
-                    if (len_shifts > 10)
-                    log_debug("len_shifts %d",len_shifts);
                     for(int zz=0;zz<len_shifts;zz++) {
-                    //while(new_bin_it->i < x+1) {
                         new_bin_len += crs_memory(crs_rowlist_len(new_bin_it->cursor),crs_colind_len(new_bin_it->cursor));
                         crs_mmap_bin_iterator_next(new_bin_it);
                     }
-                    //log_debug("new_bin_len %lu",new_bin_len);
-                    while(kb_bin_it->i < y) crs_mmap_bin_iterator_next(kb_bin_it);
-                    //while(kb_bin_it->i < col_kb_start+1) crs_mmap_bin_iterator_next(kb_bin_it);
+
+                    while(kb_bin_it->i < y) 
+                        crs_mmap_bin_iterator_next(kb_bin_it);
 
                     crs_bin_insert_vals(kb_matrix->bin,&kb_bin_it->cursor,bits_new,new_bin_len);
 
@@ -872,10 +869,6 @@ void crs_mmap_bin_iterator_init(crs_mmap_bin_iterator *iterator, crs_mmap_mem *b
      iterator->i = -1;
 }
 
-int crs_mmap_bin_iterator_has_next(crs_mmap_bin_iterator *it) {
-    return it->colind_len > 0;
-}
-
 void crs_mmap_bin_iterator_fetch(crs_mmap_bin_iterator *it,guint fetch) {
     while(it->i < fetch) {
         it->cursor = (unsigned char *) crs_rowptr_tail(it->cursor);
@@ -912,4 +905,65 @@ void crs_mmap_bin_iterator_next(crs_mmap_bin_iterator *it) {
 
 void crs_mmap_bin_iterator_free(crs_mmap_bin_iterator *i) {
     free(i);
+}
+
+typedef struct  {
+    unsigned char *data;
+    int colind_len;
+    int i;
+    int row_ptr_index;
+    fs_rid *colind_head;
+    fs_rid *rowlist_head;
+    guint *rowptr_head;
+
+    fs_rid col;
+    fs_rid row;
+    
+} crs_matrix_iterator;
+
+void crs_matrix_iterator_init(crs_matrix_iterator *r,unsigned char *p) {
+    r->data = p;
+    r->colind_len = crs_colind_len(r->data); 
+    r->colind_head = crs_colind_head(r->data); 
+    r->rowlist_head = crs_rowlist_head(r->data); 
+    r->rowptr_head = crs_rowptr_head(r->data); 
+    r->row_ptr_index = -1;
+    r->i = -1;
+}
+
+int crs_matrix_iterator_next(crs_matrix_iterator *i) {
+   i->i++; 
+   if (i->i >= i->colind_len)
+       return 0;
+   if (((int)i->rowptr_head[i->row_ptr_index+1]) == i->i)
+       i->row_ptr_index++;
+   i->col = crs_colind_head(i->data)[i->i];
+   i->row = crs_rowlist_head(i->data)[i->row_ptr_index]; 
+   return 1;
+}
+
+void crs_matrix_inverse_list_build(crs_matrix *m) {
+    log_debug("[INIT] creating BIN inverse index");
+    crs_matrix_inverse_list *il = crs_matrix_inverse_list_new();
+    crs_mmap_bin_iterator *bin_it = crs_mmap_bin_iterator_new();
+    crs_mmap_bin_iterator_init(bin_it,m->bin);
+    guint m_colind_len = crs_colind_len(m->index->data);
+    log_debug("m_colind_len %u",m_colind_len);
+    crs_matrix_iterator *mi = malloc(sizeof(crs_matrix_iterator));
+    while(bin_it->i < (int) m_colind_len) {
+        log_debug("bin fetched");
+        crs_mmap_bin_iterator_next(bin_it);
+        crs_matrix_iterator_init(mi,bin_it->cursor);
+        log_debug("bin fetched %i with %u elts",bin_it->i,mi->colind_len);
+        while (crs_matrix_iterator_next(mi)) {
+           log_debug("xvxvxv %llx %llx",mi->col,mi->row); 
+        }
+
+        //crs_matrix_inverse_list_append(il,); 
+    }
+    free(mi);
+
+    crs_mmap_bin_iterator_free(bin_it);
+    crs_matrix_inverse_list_free(il);
+    log_debug("[END] creating BIN inverse index");
 }

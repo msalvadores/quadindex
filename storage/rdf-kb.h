@@ -23,9 +23,9 @@ typedef struct {
 
 typedef struct {
     crs_matrix_index *index;
-
     fs_rid **rids;
     guint *rid_sizes;
+    int use_inverse_bin_index;
     
     crs_bind_seg_result **seg_rs; /* N SEG x crs_bind_rs */
 
@@ -50,7 +50,7 @@ void rdf_kb_dump(rdf_kb *kb,const char *format, const char *file_out, GError **e
 
 void rdf_kb_close(rdf_kb *kb,GError **error);
 
-crs_bind_data **rdf_kb_json_bind(rdf_kb *kb,char *json_bind,int just_count,int load_from_file,GError **error);
+crs_bind_data **rdf_kb_json_bind(rdf_kb *kb,char *json_bind,int just_count,int use_inverse_bin_index,int load_from_file,GError **error);
 
 guint rdf_kb_size(rdf_kb *kb,GError **error);
 

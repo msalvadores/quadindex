@@ -4,6 +4,7 @@
 #include <glib.h>
 
 #include "common/hash.h"
+#include "crs-matrix-list.h"
 
 /* ERROR CODES */
 #define RDF_CRS 0xC0
@@ -52,7 +53,8 @@ typedef struct {
     
     crs_mmap_mem *index; /* guint[3] + rowlist, rowptr, colind */ 
     crs_mmap_mem *bin; /* guint[3] + rowlist, rowptr, colind */ 
-
+    
+    crs_matrix_inverse_list *bin_inverse;
 } crs_matrix;
 
 typedef struct {
@@ -83,7 +85,6 @@ void crs_matrix_free(crs_matrix *crs_m);
 
 crs_mmap_bin_iterator *crs_mmap_bin_iterator_new();
 void crs_mmap_bin_iterator_init(crs_mmap_bin_iterator *iterator, crs_mmap_mem *bin_mem);
-int crs_mmap_bin_iterator_has_next(crs_mmap_bin_iterator *it);
 void crs_mmap_bin_iterator_next(crs_mmap_bin_iterator *it);
 void crs_mmap_bin_iterator_fetch(crs_mmap_bin_iterator *it,guint fetch);
 void crs_mmap_bin_iterator_free(crs_mmap_bin_iterator *i);
@@ -103,5 +104,9 @@ guint *crs_rowptr_tail(unsigned char *mem);
 guint crs_colind_len(unsigned char *mem);
 guint crs_rowlist_len(unsigned char *mem);
 guint crs_rowptr_len(unsigned char *mem);
+
+
+/* inverse index operations */
+void crs_matrix_inverse_list_build(crs_matrix *m);
 
 #endif

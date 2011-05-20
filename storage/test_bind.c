@@ -11,7 +11,7 @@
 #include "common/error.h"
 
 
-int do_bin(const char *kb_name,char *bind_json,int just_count) {
+int do_bin(const char *kb_name,char *bind_json,int just_count, int use_inverse_bin_index) {
    
    
     GError *error=NULL;
@@ -26,7 +26,7 @@ int do_bin(const char *kb_name,char *bind_json,int just_count) {
     guint size = rdf_kb_size(kb,&error);
     log_info("triples %u",size);
     GError *error_bind=NULL;
-    rdf_kb_json_bind(kb,bind_json,just_count,1,&error_bind);
+    rdf_kb_json_bind(kb,bind_json,just_count,use_inverse_bin_index,1,&error_bind);
 
 #if 0
 { printf("to run query. press enter\n");
@@ -51,15 +51,18 @@ read(0, &foo, 1); }
 
 int main(int argc, char *argv[]) {
     if (argc<3) {
-        fprintf(stderr,"Use test_bin kb_name bin_file\n");
+        fprintf(stderr,"Use test_bin kb_name bin_file use_inverse_bin_index\n");
         exit(-1);
     }
     char *kb_name = argv[1];
     char *bind_input = argv[2];
     int just_count = 0;
-    if (argc > 3) 
+    int use_inverse_bin_index=0;
+    if (argc > 3) { 
         just_count = strcmp(argv[3],"-c") == 0;
-    do_bin(kb_name,bind_input,just_count);
+        use_inverse_bin_index =  strcmp(argv[3],"-i") == 0;
+    }
+    do_bin(kb_name,bind_input,just_count,use_inverse_bin_index);
     exit(0);
 }
 
